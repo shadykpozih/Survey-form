@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+ </head>
+
+ <body>
+  <div class="container">
+     <header class="text-center">
+      <h1 id="title">Man United Survey Form</h1>
+      <p id="description">
+       <em>Thank you for taking the time to help us improve the club</em>
+      </p>
+     </header>
+
+    <form action="#" id="survey-form" class="form-label">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" 
+         id="name"
+         class="form-control"
+         required 
+         placeholder="Enter your name"
+         >
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email"
+         id="email"
+         class="form-control"
+         required placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="number" id="number-label">Age (optional)</label>
+        <input type="number" id="number"
+         class="form-control"
+         min="10" 
+         max="100" 
+         placeholder="Age" required
+         >
+      </div>
+
+        <div class="form-group">
+         <label for="dropdown">
+           Which option best describes you as a fan?
+         </label>
+          <select name="dropdown"  id="dropdown" class="form-control" required>
+            <option value=""disabled selected>selet the best option</option>
+            <option value="">Die hard fan</option>
+            <option value="">Just a normal fan</option>
+            <option value="">Cristiano Ronaldo fan</option>
+            <option value="">Not a fan</option>
+
+           </select>
+        </div>
+
+      <div class="form-group">
+          <p>Would you recomment manchester united to a friend?</p>
+          <p>
+            <label>
+              <input type="radio" name="answer" id="definitely" value="definitely" checked>
+              Definitely
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="answer" id="maybe" value="maybe">
+              Maybe
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="answer" id="notsure"value="Not sure">
+              Not sure
+            </label>
+          </p>
+
+        
+      </div>
+        
+      <div class="form-group">  
+        <label for="favorite">Who is your favorite man united player?</label>
+        <select name="favorite" id="favorite" class="form-control" required>
+            <option value=""disabled selected>select an option</option>
+            <option value="">Cristiano Ronaldo</option>
+            <option value="">Lisandro Martinez</option>
+            <option value="">Jadon Sancho</option>
+            <option value="">Marcus Rashford</option>
+            <option value="">Antony Martial</option>
+            <option value="">Christian Erikson</option>
+            <option value="">Tyrel Malacia</option>
+            <option value="">Diego Dalot </option>
+            <option value="">Bruno Fernades</option>
+            <option value="">Harry Maguire</option>
+        </select>
+      </div> 
+      
+      <div class="form-group">
+        <p>What players would you like us to sign? (Check all that apply)</p>
+        <p>
+        <label>
+          <input type="checkbox"  id="Ruben" value="Ruben">
+          Ruben Neves
+        </label>
+        </p>
+        <p>
+          <label>
+           <input type="checkbox"  id="Rabiot" value="Rabiot">
+           Rabiot
+          </label>
+        </p>
+        <p>
+          <label>
+           <input type="checkbox"  id="Frankie" value="Frankie">
+           Frankie De Jong
+          </label>
+        </p>
+        <p>
+           <label>
+           <input type="checkbox"  id="Dumfries" value="Dumfries">
+           Dumfries
+          </label>
+        </p>
+        <p>
+          <label>
+           <input type="checkbox"  id="Depay" value="Depay">
+           Depay
+         </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox"  id="Sesko" value="Sesko">
+            Sesko
+         </label>
+        </p>
+        <p>
+         <label>
+           <input type="checkbox"  id="Anthony" value="Anthony">
+           Anthony
+          </label>
+        </p>
+        </div>
+
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+       <textarea 
+         name="comment" 
+         id="comment" 
+         cols="50" rows="6" 
+         placeholder="Enter your comments here..." required
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <button 
+        id="submit" 
+        type="submit">Submit</button>
+      </div>
+     </form>
+
+    </div>
+ </body>
+</html>

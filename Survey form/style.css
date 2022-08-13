@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+    --font-family: "poppins", sans-serif;
+
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27,50, 0.8);
+    --color-green: #37af65;
+
+    --accent-left: rgba(58, 58, 158, 0.4);
+    --accent-right: rgba(136, 136, 206, 0.7);
+
+    --size-subheading: 1.125rem;
+    --size-label: 1.25rem;
+
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+ }
+body {
+    background: linear-gradient(to right, var(--accent-left), var(--accent-right)), url('./pexels-photo-3991976.jpeg');
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 1.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--color-white);
+    margin: 0;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+.container {
+    margin: 3.125rem auto;
+}
+.text-center {
+    text-align: center !important;
+}
+
+.description {
+    font-size: var(--size-subheading);
+    margin: auto;
+}
+
+h1{
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+}
+
+
+header {
+    padding: 2rem 1rem 1rem;
+    text-shadow: 1px 1px #333333;
+}
+
+form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.3rem;
+    width: 50%;
+    margin: auto;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+.form-group p {
+    line-height: 1;
+    margin: 0.5rem 0.1rem;
+
+}
+.form-group p:not(:nth-child(1)) {
+    margin: 0.5rem 0;
+}
+
+.form-label {
+    font-size: var(--size-label);
+}
+.form-control {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    height: 2.5rem;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.3rem;
+    border: 1px solid #dddddd;
+    margin-top: 0.4rem;
+
+}
+input[type="radio"],
+input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    
+}
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+textarea {
+    font-size: 1.2rem;
+    padding: 00.375rem 0.75rem;
+    width: 100%;
+    height: auto;
+    border: none;
+    margin: 00.5rem 0;
+}
+button {
+    background-color: var(--color-green);
+    border: none;
+    cursor: pointer;
+    color: var(--color-white);
+    font-size: var(--size-label);
+    padding: 0.75rem;
+    
+}
+@media screen and (max-width: 1141px) {
+    form {
+        width: 80%;
+    }
+}
